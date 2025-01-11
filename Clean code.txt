@@ -1,0 +1,17 @@
+* has should is can , This should be use in boolen values
+
+* class should be start will Capital
+
+* function should be getUserDetails , Start with small letter ever word is separted with capital
+
+* Var should be full name(ex logindetails)
+
+*const (MAX_LIMIT)
+
+*private variable should be start with _userdetails
+
+*An function should be do only one work 
+
+*Dont call the number directly in code number and string should be in a variable
+
+*Error Handleing--Important use try catch or use log
