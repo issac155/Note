@@ -14,4 +14,4 @@
 
 *Dont call the number directly in code number and string should be in a variable
 
-*Error Handleing--Important use try catch or use log
+* Error Handleing--Important use try catch or use log
