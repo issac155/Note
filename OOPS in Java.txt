@@ -1,0 +1,71 @@
+..................................oops.............................................
+
+* In java write everything inside a class so there is no function we call it as a methods
+
+
+////////////////////////////////////////////////////////////////////////////
+
+ void is an written type 
+
+public static void add()----------->(this add is an identifier){
+	
+}
+
+
+ void function/non void function 
+
+void :
+ with or without parameter
+ public static void add() {
+
+}
+
+Non Void :
+
+ with or without parameter
+ public static int add(){
+ return c;
+	
+}
+/////////////////////////////////////////////////////////////////////////
+
+
+* Recurstion:
+
+function calling itsself	
+
+public static void nanumber(int n){
+
+if(n==1){
+
+}else{
+
+system.out.println(n)
+nanumber(n:n-1);
+
+}
+
+///////////////////////////////////////////////////////////////////////
+
+*class and objects
+
+eg(student application from
+
+-------------> form template is called as class
+
+-------------> form i filled for me as object
+)
+
+object is called as intense of class
+
+inside of an class the methods and variables
+
+a thing inside an class is members of class
+
+
+
+
+
+
+
+
