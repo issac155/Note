@@ -15,3 +15,5 @@
 *Dont call the number directly in code number and string should be in a variable
 
 * Error Handleing--Important use try catch or use log
+
+* Use camelcase and snakecase in python and javascript
