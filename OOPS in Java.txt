@@ -100,6 +100,19 @@ eg(tablet)
 
 inheritance
 
+it which one class allow the inherit the features (field , methods) to another class
+
+eg(animal....../lion,tiger)
+
+///////////////////////////////////////////////////////////////////
+
+Polymorphism:
+
+method as many forms is defined as .......
+
+///////////////////////////////////////////////////////////////////////
+
+
 
 
 
