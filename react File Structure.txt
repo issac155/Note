@@ -1,0 +1,184 @@
+React Clean code and correct file structure
+
+..............................................................................................................
+src/
+├── components/   // ✅ lowercase
+│   ├── Button.jsx  // ✅ Component starts with uppercase
+│   └── input.jsx   // ❌ Avoid (should be Input.jsx)
+│
+├── pages/        // ✅ lowercase
+│   ├── HomePage.jsx  // ✅ Component starts with uppercase
+│   └── auth/     // ✅ lowercase subfolder
+│       ├── SignInPage.jsx  // ✅ Component
+│       └── signUpPage.jsx  // ❌ Avoid (should be SignUpPage.jsx)
+│
+├── hooks/        // ✅ lowercase
+│   └── useAuth.js  // ✅ Custom hook
+│
+├── utils/        // ✅ lowercase
+│   └── formatDate.js  // ✅ Utility function
+│
+└── App.jsx       // ✅ Component starts with uppercase
+
+
+.............................................................................................................
+
+
+src/
+├── components/          # Reusable UI components (JSX)
+│   ├── auth/            # Auth-related components
+│   │   ├── SignInForm.jsx
+│   │   ├── SignUpForm.jsx
+│   │   └── OAuthButtons.jsx
+│   │
+│   ├── ui/              # Generic UI elements (JSX)
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   └── Modal.jsx
+│   │
+│   └── ...
+│
+├── pages/               # Page components (JSX)
+│   ├── auth/
+│   │   ├── SignInPage.jsx
+│   │   └── SignUpPage.jsx
+│   │
+│   ├── workspaces/      # Workspace-related pages
+│   │   ├── WorkspacePage.jsx
+│   │   └── ChannelPage.jsx
+│   │
+│   └── ...
+│
+├── layouts/             # Layout wrappers (JSX)
+│   ├── AuthLayout.jsx
+│   ├── MainLayout.jsx
+│   └── ...
+│
+├── hooks/               # Custom hooks (JS)
+│   ├── useAuth.js       # Auth logic
+│   ├── useChat.js       # Chat logic
+│   └── ...
+│
+├── contexts/            # React contexts (JS)
+│   ├── AuthContext.js
+│   └── ChatContext.js
+│
+├── utils/               # Utility functions (JS)
+│   ├── validators.js    # Form validation
+│   ├── helpers.js       # Generic helpers
+│   └── ...
+│
+├── services/            # API/services (JS)
+│   ├── api.js          # Axios instance
+│   ├── authService.js  # Auth API calls
+│   └── chatService.js  # Chat API calls
+│
+├── assets/              # Static assets
+│   ├── images/
+│   ├── fonts/
+│   └── ...
+│
+├── App.jsx              # Root component (JSX)
+└── index.js             # Entry point (JS)
+
+
+.................................................................................................................
+
+
+1. JavaScript (.js) vs JSX (.jsx) Files
+File Type
+Usage
+Typical Location
+.js
+Pure JavaScript logic (hooks, utils, services)
+src/hooks/, src/utils/, src/services/
+.jsx
+React components (contains HTML-like syntax)
+src/components/, src/pages/, src/layouts
+
+
+
+Type	Example	Correct?
+Folder	components/	✅
+Folder	Components/	❌ (Avoid)
+React Component	Button.jsx	✅
+React Component	button.jsx	❌
+Utility Function	formatDate.js	✅
+Custom Hook	useAuth.js	✅
+Custom Hook	UseAuth.js	❌
+
+
+
+src/
+├── api/                   # API services (Axios/GraphQL)
+│   ├── auth.api.js        # SignIn, SignUp APIs
+│   ├── company.api.js     # Company creation APIs
+│   ├── user.api.js        # User management APIs
+│   ├── group.api.js       # Group APIs
+│   ├── roles.api.js       # User roles APIs
+│   ├── chat.api.js        # Chat APIs
+│   └── dashboard.api.js   # Dashboard data APIs
+│
+├── assets/                # Static files (images, fonts)
+│   ├── images/
+│   └── fonts/
+│
+├── components/            # Reusable UI components
+│   ├── auth/              # Auth-related (SignIn/SignUp forms)
+│   ├── company/           # Company creation UI
+│   ├── user/              # User management UI
+│   ├── group/             # Group-related UI
+│   ├── roles/             # Role management UI
+│   ├── chat/              # Chat components
+│   ├── dashboard/         # Dashboard widgets
+│   └── ui/                # Generic (buttons, inputs, modals)
+│
+├── pages/                 # Page components (routes)
+│   ├── auth/              # SignIn, SignUp pages
+│   │   ├── SignInPage.jsx
+│   │   └── SignUpPage.jsx
+│   ├── company/           # Company creation page
+│   │   └── CreateCompanyPage.jsx
+│   ├── user/              # User management
+│   │   ├── UserCreationPage.jsx
+│   │   └── UserListPage.jsx
+│   ├── group/             # Group management
+│   │   ├── CreateGroupPage.jsx
+│   │   └── GroupListPage.jsx
+│   ├── roles/             # User & Roles
+│   │   └── RolesPage.jsx
+│   ├── chat/              # Chat interface
+│   │   └── ChatPage.jsx
+│   └── dashboard/         # Master dashboard
+│       └── DashboardPage.jsx
+│
+├── styles/                # Global & modular CSS/SASS
+│   ├── base/              # Reset, variables, mixins
+│   │   ├── _reset.scss
+│   │   ├── _variables.scss
+│   │   └── _mixins.scss
+│   ├── components/        # Component-specific styles
+│   │   ├── auth.scss
+│   │   ├── company.scss
+│   │   └── chat.scss
+│   ├── layouts/           # Layout styles
+│   │   ├── auth.scss
+│   │   └── main.scss
+│   └── main.scss          # Global styles
+│
+├── hooks/                 # Custom React hooks
+│   ├── useAuth.js         # Auth logic
+│   ├── useCompany.js      # Company logic
+│   └── useChat.js         # Chat logic
+│
+├── contexts/              # React Contexts
+│   ├── AuthContext.js
+│   └── ChatContext.js
+│
+├── utils/                 # Helper functions
+│   ├── validators.js      # Form validation
+│   └── helpers.js         # Generic utils
+│
+├── App.jsx                # Root component
+└── index.js               # Entry point
+
